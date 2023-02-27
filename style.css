@@ -1,0 +1,132 @@
+body {
+    background: rgb(255,52,7);
+background: linear-gradient(90deg, rgba(255,52,7,1) 100%, rgba(255,59,0,1) 100%, rgba(255,51,0,1) 100%);
+}
+
+h1 {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; /* Ir probando con el epsacio entre personajes, cuando los tenga todos */
+}
+
+.unselected {
+    background-color: transparent
+}
+
+.selected {
+    opacity: .5;
+}
+
+.enemy-container {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; /* Ir probando con el epsacio entre personajes, cuando los tenga todos */
+}
+
+#fight {
+    margin-left: 47%;
+    margin-bottom: 3em;
+}
+
+.personaje {
+    width: 15%;
+    height: 200px;
+    margin: 1px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.personaje:hover {
+    transform: scale(1.5);
+    transition: .5s;
+}
+
+.img {
+    max-width: 80%;
+    height: 80%;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible;
+}
+
+.battle-arena {
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 2em;
+    background-image: url(images/tenkaichi-budokai.jpg);
+    background-size: 800px 600px;
+    height: 600px;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+}
+
+/*Buscar una imagen de shenron para poner de fondo de las vits */
+.vit-displayer {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 350px;
+}
+
+.fighters {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.player-ground {
+    display: flex;
+    flex-direction: column;
+}
+
+.stand {
+    background: transparent;
+}
+
+.attack-left {
+    transform: translateX(-20px);
+    transition: transform 0.1s ease;
+}
+
+.attack-right {
+    transform: translateX(20px);
+    transition: transform 0.1s ease;
+}
+
+.finished {
+    margin-left: 20%;
+    margin-bottom: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('images/shenron.png');
+    background-repeat: no-repeat;
+    height: 315px;
+    width: 851px;
+}
+
+#volver {
+    background: grey;
+    border: none;
+    border-radius: 15px;
+    color: white;
+}

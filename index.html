@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Minijuego</title>
+</head>
+<body>
+    <div class="main-menu visible">
+        <h1>Selecciona un personaje</h1>
+        <div class="container unselected">
+            <section class="personaje">
+                <img src="images/Goku-image.png" class="img">
+                <button class="selector" id="goku">Son Goku</button>
+            </section>
+            <section class="personaje">
+                <img src="images/kid-gohan-image.png" class="img">
+                <button class="selector" id="gohan">Son Gohan</button>
+            </section>
+            <section class="personaje">
+                <img src="images/vegeta-image.png" class="img">
+                <button class="selector" id="vegeta">Vegeta</button>
+            </section>
+            <section class="personaje">
+                <img src="images/Piccolo-image.png" class="img">
+                <button class="selector" id="piccolo">Piccolo</button>
+            </section>
+            <section class="personaje">
+                <img src="images/a18-img.png" class="img">
+                <button class="selector" id="a18">Android 18</button>
+            </section>
+            <section class="personaje">
+                <img src="images/Videl-image.png" class="img">
+                <button class="selector" id="videl">Videl</button>
+            </section>
+            <section class="personaje">
+                <img src="images/trunks-image.png" class="img">
+                <button class="selector" id="trunks">Trunks</button>
+            </section>
+            <section class="personaje">
+                <img src="images/Freezer-image.png" class="img">
+                <button class="selector" id="freezer">Freezer</button>
+            </section>
+            <section class="personaje">
+                <img src="images/cell-image.png" class="img">
+                <button class="selector" id="cell">Cell</button>
+            </section>
+            <section class="personaje">
+                <img src="images/buu-image.png" class="img">
+                <button class="selector" id="buu">Majin Buu</button>
+            </section>
+        </div>
+        <h1>Selecciona un oponente</h1>
+        <div class="enemy-container unselected">
+            <section class="personaje">
+                <img src="images/Goku-image.png" class="img">
+                <button class="selector2" id="goku">Son Goku</button>
+            </section>
+            <section class="personaje">
+                <img src="images/kid-gohan-image.png" class="img">
+                <button class="selector2" id="gohan">Son Gohan</button>
+            </section>
+            <section class="personaje">
+                <img src="images/vegeta-image.png" class="img">
+                <button class="selector2" id="vegeta">Vegeta</button>
+            </section>
+            <section class="personaje">
+                <img src="images/Piccolo-image.png" class="img">
+                <button class="selector2" id="piccolo">Piccolo</button>
+            </section>
+            <section class="personaje">
+                <img src="images/a18-img.png" class="img">
+                <button class="selector2" id="a18">Android 18</button>
+            </section>
+            <section class="personaje">
+                <img src="images/Videl-image.png" class="img">
+                <button class="selector2" id="videl">Videl</button>
+            </section>
+            <section class="personaje">
+                <img src="images/trunks-image.png" class="img">
+                <button class="selector2" id="trunks">Trunks</button>
+            </section>
+            <section class="personaje">
+                <img src="images/Freezer-image.png" class="img">
+                <button class="selector2" id="freezer">Freezer</button>
+            </section>
+            <section class="personaje">
+                <img src="images/cell-image.png" class="img">
+                <button class="selector2" id="cell">Cell</button>
+            </section>
+            <section class="personaje">
+                <img src="images/buu-image.png" class="img">
+                <button class="selector2" id="buu">Majin Buu</button>
+        </div>
+        <button id="fight">Start battle</button>
+    </div>
+    <div class="battle-arena hidden">
+        <div class="vit-displayer">
+            <h1 id="vit-player"></h1>
+            <h1 id="vit-computer"></h1>
+        </div> <!--Meter aquí el texto con las vits de los fighters-->
+        <div class="fighters">
+            <section class="player-ground">
+                <img src="sprites/vegeta-player-sprite.png" class="player stand">
+            </section>
+            <section class="enemy-ground"> 
+                <img src="sprites/a18-enemy-sprite.png" class="enemy stand">
+            </section>
+        </div>
+        <div id="comand">
+            <button id="attack">Attack</button>
+            <button id="defense">Defense</button>
+        </div>
+        <audio id="punch">
+            <source src="audio/punch.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+    <div class="finished hidden">
+        <h1 id="final-text"></h1>
+        <button id="volver">Selecciónde personajes</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
